@@ -65,11 +65,11 @@ This project provides partial experimental data (in ROS bag format) for reproduc
   <tr>
     <td>
       <img src="figures/figure5.png" alt="5" width="450"/>
-      <p align="center"><em>figure7. State estimates and ground truth of Robot 2 on sequence Library_2 of dataset S3E</em></p>
+      <p align="center"><em>figure6. State estimates and ground truth of Robot 2 on sequence Library_2 of dataset S3E</em></p>
     </td>
     <td>
       <img src="figures/figure4.png" alt="4" width="450"/>
-      <p align="center"><em>figure6. State estimates and ground truth of Robot 3 on sequence Lawn_1 of our custom dataset</em></p>
+      <p align="center"><em>figure7. State estimates and ground truth of Robot 3 on sequence Lawn_1 of our custom dataset</em></p>
     </td>
     
   </tr>
@@ -107,15 +107,15 @@ This project provides partial experimental data (in ROS bag format) for reproduc
   <tr>
     <td>
       <img src="figures/figure11.png" alt="11" width="450"/>
-      <p align="center"><em>figure12. Ego-state estimates of Robot 1 using different approaches on sequence Tunnel_1 of dateset S3E</em></p>
+      <p align="center"><em>figure12. Ego-state estimates of Robot 1 using different approaches on sequence Tunnel_1 of dataset S3E</em></p>
     </td>
     <td>
       <img src="figures/figure12.png" alt="12" width="450"/>
-      <p align="center"><em>figure13. Ego-state estimates of Robot 2 using different approaches on sequence Tunnel_1 of dateset S3E</em></p>
+      <p align="center"><em>figure13. Ego-state estimates of Robot 2 using different approaches on sequence Tunnel_1 of dataset S3E</em></p>
     </td>
     <td>
       <img src="figures/figure13.png" alt="13" width="450"/>
-      <p align="center"><em>figure14. Ego-state estimates of Robot 3 using different approaches on sequence Tunnel_1 of dateset S3E</em></p>
+      <p align="center"><em>figure14. Ego-state estimates of Robot 3 using different approaches on sequence Tunnel_1 of dataset S3E</em></p>
     </td>
     
   </tr>
