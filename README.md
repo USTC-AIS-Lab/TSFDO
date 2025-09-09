@@ -1,18 +1,18 @@
 # TSFDO
 
-This repository provides the data and selected figures used in the paper *“From Local Odometry to Global Awareness: A Two-Stage Filter-Based Distributed Odometry for Multi-Robot Systems”*, for the convenience of researchers to reference and use.
+This repository provides the selected figures and data used in the paper *“From Local Odometry to Global Awareness: A Two-Stage Filter-Based Distributed Odometry for Multi-Robot Systems”*, for the convenience of researchers to reference and use.
   
 
-📄 Paper Link: [arXiv / 会议 / 期刊](https://arxiv.org/abs/xxxx)
+📄 Related paper is available on arxiv: [TSFDO](https://arxiv.org/abs/xxxx).
 
 ---
 
 ## 📊 Dataset Download
 
-This project provides partial experimental data (in ROS bag format) for reproducing the experimental results in the paper.  
+This project provides partial experimental data (in ROS bag format) for obtaining the experimental results in the paper.  
 
 - [Rosbag](https://huggingface.co/datasets/WenZhong1024/USTC-AIS-Lab_TSFDO/tree/main)  
-- [Alternative link (Baidu Netdisk)](https://pan.baidu.com/s/xxxx) Extraction code: `abcd`  
+- [Alternative link (Baidu Netdisk)](https://pan.baidu.com/s/xxxx) Extraction code: `****`  
 
 > ⚠️ Note: Please cite this paper when using the dataset and comply with the open-source license.
 
@@ -29,19 +29,19 @@ This project provides partial experimental data (in ROS bag format) for reproduc
     </td>
     <td>
       <img src="figures/figure2.png" alt="2" width="400"/>
-      <p align="center"><em>figure2. Details about the UAV and the orchard mobile robot</em></p>
+      <p align="center"><em>figure2. Details about the UAV and the ground vehicle</em></p>
     </td>
   </tr>
 </table>
 
-### 2. Top-down view of the mobile robot dataset collection route
+### 2. Top-down view of the ground vehicle dataset collection route
 
 <p align="center">
   <img src="figures/figure3.png" alt="3" width="500"/>
 </p>
 
 <p align="center">
-  <em>figure3.  Aerial view of the USTC High-Tech Campus</em>
+  <em>figure3.  Aerial view of the collection routes in USTC High-Tech Campus</em>
 </p>
 
 ### 3. Communication topology diagram used in our paper
@@ -54,7 +54,7 @@ This project provides partial experimental data (in ROS bag format) for reproduc
     </td>
     <td>
       <img src="figures/figure15.png" alt="15" width="400"/>
-      <p align="center"><em>figure5. communication topology of the orchard mobile robot</em></p>
+      <p align="center"><em>figure5. UGV communication topology</em></p>
     </td>
   </tr>
 </table>
@@ -69,7 +69,7 @@ This project provides partial experimental data (in ROS bag format) for reproduc
     </td>
     <td>
       <img src="figures/figure4.png" alt="4" width="450"/>
-      <p align="center"><em>figure7. State estimates and ground truth of Robot 3 on sequence Lawn_1 of our custom dataset</em></p>
+      <p align="center"><em>figure7. State estimates and ground truth of Robot 3 on sequence Lawn_1 of our customized dataset</em></p>
     </td>
     
   </tr>
@@ -79,11 +79,11 @@ This project provides partial experimental data (in ROS bag format) for reproduc
   <tr>
     <td>
       <img src="figures/figure6.png" alt="6" width="450"/>
-      <p align="center"><em>figure8. State estimates of Robot 1 computed by Robot 1 on sequence Lawn_4 of our custom dataset</em></p>
+      <p align="center"><em>figure8. State estimates of Robot 1 computed by Robot 1 on sequence Lawn_4 of our customized dataset</em></p>
     </td>
     <td>
       <img src="figures/figure7.png" alt="7" width="450"/>
-      <p align="center"><em>figure9. State estimates of Robot 2 computed by Robot 1 on sequence Lawn_4 of our custom dataset</em></p>
+      <p align="center"><em>figure9. State estimates of Robot 2 computed by Robot 1 on sequence Lawn_4 of our customized dataset</em></p>
     </td>
   </tr>
 </table>
@@ -92,11 +92,11 @@ This project provides partial experimental data (in ROS bag format) for reproduc
   <tr>
     <td>
       <img src="figures/figure8.png" alt="8" width="450"/>
-      <p align="center"><em>figure10. State estimates of Robot 3 computed by Robot 1 on sequence Lawn_4 of our custom dataset</em></p>
+      <p align="center"><em>figure10. State estimates of Robot 3 computed by Robot 1 on sequence Lawn_4 of our customized dataset</em></p>
     </td>
     <td>
       <img src="figures/figure9.png" alt="9" width="450"/>
-      <p align="center"><em>figure11. State estimates of Robot 4 computed by Robot 1 on sequence Lawn_4 of our custom dataset</em></p>
+      <p align="center"><em>figure11. State estimates of Robot 4 computed by Robot 1 on sequence Lawn_4 of our customized dataset</em></p>
     </td>
   </tr>
 </table>
@@ -133,26 +133,34 @@ This project provides partial experimental data (in ROS bag format) for reproduc
 
 ---
 
-## 🚀 使用方法
+## 🚀 Usage
 
-1. 克隆仓库  
+1. Clone the repository  
    ```bash
-   git clone https://github.com/username/repo.git
+   git clone https://github.com/USTC-AIS-Lab/TSFDO.git
    cd repo
-2. 下载数据集并放入 datasets/ 文件夹。
-    ```bash
-    rosbag play datasets/uav0_uav1.bag
-4. 播放 rosbag：
-
+2. Download the dataset and place it in the `datasets/` folder.
+3. Play rosbag
+   ```bash
+    rosbag play datasets/Lawn_1.bag
 ---
 
-## 📌 引用
+## 📌 Citation
 
-如果本仓库和数据集对您的研究有帮助，请引用我们的论文：
-```bash
+If this repository and dataset are helpful for your research, please cite our paper:
+```bibtex
 @inproceedings{your_paper,
   title={Paper Title},
   author={Your Name and Others},
-  booktitle={Conference},
+  booktitle={arXiv},
   year={2025}
 }
+```
+---
+
+## 🙏 Acknowledgements
+
+This project would not have been possible without the following resources and support:
+
+- Thanks to the [ROS](https://www.ros.org/) community and other open-source projects such as [S3E](https://pengyu-team.github.io/S3E), [CoLRIO](https://github.com/PengYu-team/Co-LRIO), [DiSCo-SLAM](https://github.com/RobustFieldAutonomyLab/DiSCo-SLAM) for providing tools and frameworks.  
+- Thanks to all team members for their collaboration during the experiments.   
