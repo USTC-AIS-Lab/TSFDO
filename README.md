@@ -1,5 +1,13 @@
 # TSFDO
 
+<p align="center">
+  <img src="figures/figure16.png" alt="16" width="500"/>
+</p>
+
+<p align="center">
+  <em>figure1.  Framework of the proposed distributed odometry</em>
+</p>
+
 1. The fully distributed odometry framework for multi-robot systems cooperative localization problem with dynamic communication topologies, termed **TSFDO**, is a two-stage, filter-based approach that integrates IMU, LiDAR, and UWB measurements in a tightly-coupled invariant extended Kalman filter-based way.
 
 2. Comparative studies against state-of-the-art cooperative localization methods confirm the superior accuracy of the proposed approach.
@@ -24,16 +32,16 @@ This project provides partial experimental data (in ROS bag format) for obtainin
 
 ## 🖼️ Related Figures
 
-### 1. Hardware configuration used for recording the custom dataset
+### 1. Experiment Introduction
 <table>
   <tr>
     <td>
       <img src="figures/figure1.png" alt="1" width="400"/>
-      <p align="center"><em>figure1. UAVs used for recording the dataset</em></p>
+      <p align="center"><em>figure2. UAVs used for recording the dataset</em></p>
     </td>
     <td>
       <img src="figures/figure2.png" alt="2" width="400"/>
-      <p align="center"><em>figure2. Details about the UAV and the ground vehicle</em></p>
+      <p align="center"><em>figure3. Details about the UAV and the ground vehicle</em></p>
     </td>
   </tr>
 </table>
@@ -45,7 +53,7 @@ For the ground vehicle dataset, datas are collected by a single robot. Specifica
 </p>
 
 <p align="center">
-  <em>figure3.  Aerial view of the collection routes in USTC High-Tech Campus</em>
+  <em>figure4.  Aerial view of the collection routes in USTC High-Tech Campus</em>
 </p>
 
 Trajectories of the ground vehicle when collecting sequences: SequenceGR 1 (blue), Sequence-GR 1 (yellow), and Sequence-GR 1 (red). 
@@ -54,11 +62,11 @@ Trajectories of the ground vehicle when collecting sequences: SequenceGR 1 (blue
   <tr>
     <td>
       <img src="figures/figure14.png" alt="14" width="400"/>
-      <p align="center"><em>figure4. Communication topology among the four UAVs</em></p>
+      <p align="center"><em>figure5. Communication topology among the four UAVs</em></p>
     </td>
     <td>
       <img src="figures/figure15.png" alt="15" width="400"/>
-      <p align="center"><em>figure5. Communication topology among three ground vehicles</em></p>
+      <p align="center"><em>figure6. Communication topology among three ground vehicles</em></p>
     </td>
   </tr>
 </table>
@@ -71,25 +79,27 @@ The dashed line represents the intermitted communication.
   <tr>
     <td>
       <img src="figures/figure5.png" alt="5" width="450"/>
-      <p align="center"><em>figure6. State estimates and ground truth of Robot 2 on sequence Library_2 of dataset S3E</em></p>
+      <p align="center"><em>figure7. State estimates and ground truth of Robot 2 on sequence Library_2 of dataset S3E</em></p>
     </td>
     <td>
       <img src="figures/figure4.png" alt="4" width="450"/>
-      <p align="center"><em>figure7. State estimates and ground truth of Robot 3 on sequence Lawn_1 of our customized dataset</em></p>
+      <p align="center"><em>figure8. State estimates and ground truth of Robot 3 on sequence Lawn_1 of our custom dataset</em></p>
     </td>
     
   </tr>
 </table>
 
+The results indicate that the UWB-based update effectively improves the accuracy of selfstate estimation, particularly for robots with larger self-state estimation errors. Even in cases where the self-state estimates are already relatively accurate, as on the sequences of custom dataset, incorporating UWB inputs still yields improvements, making the ego-state estimates more accurate.
+
 <table>
   <tr>
     <td>
       <img src="figures/figure6.png" alt="6" width="450"/>
-      <p align="center"><em>figure8. State estimates of Robot 1 computed by Robot 1 on sequence Lawn_4 of our customized dataset</em></p>
+      <p align="center"><em>figure9. State estimates of Robot 1 computed by Robot 1 on sequence Lawn_4 of our custom dataset</em></p>
     </td>
     <td>
       <img src="figures/figure7.png" alt="7" width="450"/>
-      <p align="center"><em>figure9. State estimates of Robot 2 computed by Robot 1 on sequence Lawn_4 of our customized dataset</em></p>
+      <p align="center"><em>figure10. State estimates of Robot 2 computed by Robot 1 on sequence Lawn_4 of our custom dataset</em></p>
     </td>
   </tr>
 </table>
@@ -98,14 +108,16 @@ The dashed line represents the intermitted communication.
   <tr>
     <td>
       <img src="figures/figure8.png" alt="8" width="450"/>
-      <p align="center"><em>figure10. State estimates of Robot 3 computed by Robot 1 on sequence Lawn_4 of our customized dataset</em></p>
+      <p align="center"><em>figure11. State estimates of Robot 3 computed by Robot 1 on sequence Lawn_4 of our custom dataset</em></p>
     </td>
     <td>
       <img src="figures/figure9.png" alt="9" width="450"/>
-      <p align="center"><em>figure11. State estimates of Robot 4 computed by Robot 1 on sequence Lawn_4 of our customized dataset</em></p>
+      <p align="center"><em>figure12. State estimates of Robot 4 computed by Robot 1 on sequence Lawn_4 of our custom dataset</em></p>
     </td>
   </tr>
 </table>
+
+It can be clearly observed that the robot is able to estimate the states of all other individuals under the connected communication topology, even during intervals when two robots cannot directly exchange information.
 
 ### 3. Accuracy Experiments
 
@@ -113,19 +125,20 @@ The dashed line represents the intermitted communication.
   <tr>
     <td>
       <img src="figures/figure11.png" alt="11" width="450"/>
-      <p align="center"><em>figure12. Ego-state estimates of Robot 1 using different approaches on sequence Tunnel_1 of dataset S3E</em></p>
+      <p align="center"><em>figure13. Ego-state estimates of Robot 1 using different approaches on sequence Tunnel_1 of dataset S3E</em></p>
     </td>
     <td>
       <img src="figures/figure12.png" alt="12" width="450"/>
-      <p align="center"><em>figure13. Ego-state estimates of Robot 2 using different approaches on sequence Tunnel_1 of dataset S3E</em></p>
+      <p align="center"><em>figure14. Ego-state estimates of Robot 2 using different approaches on sequence Tunnel_1 of dataset S3E</em></p>
     </td>
     <td>
       <img src="figures/figure13.png" alt="13" width="450"/>
-      <p align="center"><em>figure14. Ego-state estimates of Robot 3 using different approaches on sequence Tunnel_1 of dataset S3E</em></p>
-    </td>
-    
+      <p align="center"><em>figure15. Ego-state estimates of Robot 3 using different approaches on sequence Tunnel_1 of dataset S3E</em></p>
+    </td>  
   </tr>
 </table>
+
+Comparison of ego-state estimation using different approaches on Tunnel 1 clearly demonstrates the superior accuracy of TSFDO.
 
 ### 4. Ablation Experiments
 <p align="center">
@@ -133,7 +146,7 @@ The dashed line represents the intermitted communication.
 </p>
 
 <p align="center">
-  <em>figure15.  State estimates of Robot 3 computed by Robot 1 under different communication intervals on sequence Lawn_3 in the scenario without the consensus step.
+  <em>figure16.  State estimates of Robot 3 computed by Robot 1 under different communication intervals on sequence Lawn_3 in the scenario without the consensus step.
  </em>
 </p>
 
