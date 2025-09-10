@@ -1,6 +1,10 @@
 # TSFDO
 
-This repository provides the selected figures and data used in the paper *“From Local Odometry to Global Awareness: A Two-Stage Filter-Based Distributed Odometry for Multi-Robot Systems”*, for the convenience of researchers to reference and use.
+1. The fully distributed odometry framework for multi-robot systems cooperative localization problem with dynamic communication topologies, termed **TSFDO**, is a two-stage, filter-based approach that integrates IMU, LiDAR, and UWB measurements in a tightly-coupled invariant extended Kalman filter-based way.
+
+2. Comparative studies against state-of-the-art cooperative localization methods confirm the superior accuracy of the proposed approach.
+
+3. This repository provides the selected figures and data used in the paper *“From Local Odometry to Global Awareness: A Two-Stage Filter-Based Distributed Odometry for Multi-Robot Systems”*, for the convenience of researchers to reference and use.
   
 
 📄 Related paper is available on arxiv: [TSFDO](https://arxiv.org/abs/xxxx).
@@ -20,7 +24,7 @@ This project provides partial experimental data (in ROS bag format) for obtainin
 
 ## 🖼️ Related Figures
 
-### 1. Hardware configuration used for recording the dataset
+### 1. Hardware configuration used for recording the custom dataset
 <table>
   <tr>
     <td>
@@ -34,7 +38,7 @@ This project provides partial experimental data (in ROS bag format) for obtainin
   </tr>
 </table>
 
-### 2. Top-down view of the ground vehicle dataset collection route
+For the ground vehicle dataset, datas are collected by a single robot. Specifically, the data obtained from three different trajectories, containing IMU and LiDAR measurements, are merged into one multi-robot sequence.
 
 <p align="center">
   <img src="figures/figure3.png" alt="3" width="500"/>
@@ -44,22 +48,24 @@ This project provides partial experimental data (in ROS bag format) for obtainin
   <em>figure3.  Aerial view of the collection routes in USTC High-Tech Campus</em>
 </p>
 
-### 3. Communication topology diagram used in our paper
+Trajectories of the ground vehicle when collecting sequences: SequenceGR 1 (blue), Sequence-GR 1 (yellow), and Sequence-GR 1 (red). 
 
 <table>
   <tr>
     <td>
       <img src="figures/figure14.png" alt="14" width="400"/>
-      <p align="center"><em>figure4. UAVs communication topology</em></p>
+      <p align="center"><em>figure4. Communication topology among the four UAVs</em></p>
     </td>
     <td>
       <img src="figures/figure15.png" alt="15" width="400"/>
-      <p align="center"><em>figure5. UGV communication topology</em></p>
+      <p align="center"><em>figure5. Communication topology among three ground vehicles</em></p>
     </td>
   </tr>
 </table>
 
-### 4. Effectiveness Experiments
+The dashed line represents the intermitted communication.
+
+### 2. Effectiveness Experiments
 
 <table>
   <tr>
@@ -101,7 +107,7 @@ This project provides partial experimental data (in ROS bag format) for obtainin
   </tr>
 </table>
 
-### 5. Accuracy Experiments
+### 3. Accuracy Experiments
 
 <table>
   <tr>
@@ -121,7 +127,7 @@ This project provides partial experimental data (in ROS bag format) for obtainin
   </tr>
 </table>
 
-### 6. Ablation Experiments
+### 4. Ablation Experiments
 <p align="center">
   <img src="figures/figure10.png" alt="10" width="500"/>
 </p>
