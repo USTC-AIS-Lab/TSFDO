@@ -150,6 +150,8 @@ Comparison of ego-state estimation using different approaches on Tunnel 1 clearl
  </em>
 </p>
 
+When there is no consensus step in the joint-state estimation stage, the mutual state estimation accuracy can still be maintained at a relatively higher communication frequency. As the communication interval getting longer, the mutual estimation performance degrades significantly.
+
 ---
 
 ## 🚀 Usage
