@@ -71,7 +71,7 @@ This project provides partial experimental data (in ROS bag format) for obtainin
 </p>
 
 <p align="center">
-  <em>figure5.  State estimates and ground truth of Robot 4 on sequence Lawn_1 of our custom dataset Campus</em>
+  <em>figure5.  State estimates and ground truth of Robot 4 on sequence Lawn_1 of our custom dataset</em>
 </p>
 
 This figure shows the comparison among ego-state estimates (blue solid line) , self-state estimates (red solid line), and groud truth on Sequence-UAV_1(Lawn_1). It is demonstrated that the UWB-based update effectively improves the accuracy of self-state estimates, even in cases where the self-state estimates are already relatively accurate.
