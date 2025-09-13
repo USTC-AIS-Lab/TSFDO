@@ -5,7 +5,7 @@
 ## Framework overview
 
 <p align="center">
-  <img src="figures/figure1.png" alt="figure1" width="500"/>
+  <img src="figures/figure1.png" alt="figure1" width="800"/>
 </p>
 
 <p align="center">
@@ -40,7 +40,7 @@ Four self-made UAVs and a ground mobile robot is utilized for data collection.
 ### 1.2 Data collection
 
 <p align="center">
-  <img src="figures/figure4.png" alt="figure4" width="500"/>
+  <img src="figures/figure4.png" alt="figure4" width="600"/>
 </p>
 
 <p align="center">
@@ -127,7 +127,7 @@ The dashed line represents the intermitted communication.
 ### 2.2 Ablasion experiments
 
 <p align="center">
-  <img src="figures/figure12.png" alt="figure12" width="250"/>
+  <img src="figures/figure12.png" alt="figure12" width="500"/>
 </p>
 
 <p align="center">
@@ -140,7 +140,7 @@ We consider three cases for the joint state estimation stage: **1)** the update 
 A comparison between cases 1) and 3) shows that the UWB-based update provides further correction of the mutual-state estimates, but the improvement is limited. Meanwhile, the difference in estimation accuracy between cases 2) and 3) highlights the critical role of the consensus step in ensuring the precision of the mutual state estimation. Based on these facts, the absence of the consensus step will significantly undermine the performance of TSFDO.
 
 <p align="center">
-  <img src="figures/figure13.png" alt="figure13" width="500"/>
+  <img src="figures/figure13.png" alt="figure13" width="600"/>
 </p>
 
 <p align="center">
