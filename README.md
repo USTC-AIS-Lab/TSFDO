@@ -44,7 +44,7 @@ Four self-made UAVs and a ground mobile robot is utilized for data collection.
 </p>
 
 <p align="center">
-  <em>figure4.  Trajectories of the ground robot when collecting sequences: SequenceGR 1 (blue), Sequence-GR 1 (yellow), and Sequence-GR 1 (red)</em>
+  <em>figure4.  Trajectories of the ground robot when collecting sequences: Sequence-GR_1 (blue), Sequence-GR_2 (yellow), and Sequence-GR_3 (red)</em>
 </p>
 
 Four UAVs form a multi-robot system for data collection. For the ground robot dataset, data are collected by a single robot. 
@@ -71,10 +71,10 @@ This project provides partial experimental data (in ROS bag format) for obtainin
 </p>
 
 <p align="center">
-  <em>figure5.  State estimates and ground truth of Robot 4 on sequence Lawn_1 of our custom dataset</em>
+  <em>figure5.  State estimates and ground truth of Robot 4 on sequence Sequence-UAV_1 of our custom dataset</em>
 </p>
 
-This figure shows the comparison among ego-state estimates (blue solid line) , self-state estimates (red solid line), and groud truth on Sequence-UAV_1(Lawn_1). It is demonstrated that the UWB-based update effectively improves the accuracy of self-state estimates, even in cases where the self-state estimates are already relatively accurate.
+This figure shows the comparison among ego-state estimates (blue solid line) , self-state estimates (red solid line), and groud truth on Sequence-UAV_1. It is demonstrated that the UWB-based update effectively improves the accuracy of self-state estimates, even in cases where the self-state estimates are already relatively accurate.
 
 <p align="center">
   <img src="figures/figure6.png" alt="figure6" width="500"/>
@@ -89,11 +89,11 @@ This figure shows the comparison among ego-state estimates (blue solid line) , s
   <tr>
     <td>
       <img src="figures/figure7.png" alt="7" width="450"/>
-      <p align="center"><em>figure7. State estimates of Robot 1 computed by Robot 1 on sequence Lawn_4 of our custom dataset</em></p>
+      <p align="center"><em>figure7. State estimates of Robot 1 computed by Robot 1 on sequence Sequence-UAV_4 of our custom dataset</em></p>
     </td>
     <td>
       <img src="figures/figure8.png" alt="8" width="450"/>
-      <p align="center"><em>figure8. State estimates of Robot 2 computed by Robot 1 on sequence Lawn_4 of our custom dataset</em></p>
+      <p align="center"><em>figure8. State estimates of Robot 2 computed by Robot 1 on sequence Sequence-UAV_4 of our custom dataset</em></p>
     </td>
   </tr>
 </table>
@@ -102,16 +102,16 @@ This figure shows the comparison among ego-state estimates (blue solid line) , s
   <tr>
     <td>
       <img src="figures/figure9.png" alt="9" width="450"/>
-      <p align="center"><em>figure9. State estimates of Robot 3 computed by Robot 1 on sequence Lawn_4 of our custom dataset</em></p>
+      <p align="center"><em>figure9. State estimates of Robot 3 computed by Robot 1 on sequence Sequence-UAV_4 of our custom dataset</em></p>
     </td>
     <td>
       <img src="figures/figure10.png" alt="10" width="450"/>
-      <p align="center"><em>figure10. State estimates of Robot 4 computed by Robot 1 on sequence Lawn_4 of our custom dataset</em></p>
+      <p align="center"><em>figure10. State estimates of Robot 4 computed by Robot 1 on sequence Sequence-UAV_4 of our custom dataset</em></p>
     </td>
   </tr>
 </table>
 
-These figures shows the state estimates of four UAVs calculated by the first UAV on Sequence-UAV_4(Lawn_4), and the comparison between these estimates and their corresponding groud truths. It can be clearly observed that the robot is able to estimate the states of all other individuals under the connected communication topology given in the following figure, even during intervals when two robots cannot directly exchange information.
+These figures shows the state estimates of four UAVs calculated by the first UAV on Sequence-UAV_4, and the comparison between these estimates and their corresponding groud truths. It can be clearly observed that the robot is able to estimate the states of all other individuals under the connected communication topology given in the following figure, even during intervals when two robots cannot directly exchange information.
 
 <p align="center">
   <img src="figures/figure11.png" alt="figure11" width="500"/>
@@ -144,11 +144,11 @@ A comparison between cases 1) and 3) shows that the UWB-based update provides fu
 </p>
 
 <p align="center">
-  <em>figure13.  State estimates of Robot 3 computed by Robot 1 under different communication intervals on sequence Lawn_3 without the consensus step.
+  <em>figure13.  State estimates of Robot 3 computed by Robot 1 under different communication intervals on sequence Sequence-UAV_3 without the consensus step.
  </em>
 </p>
 
-This figure shows the state estimates of robot 3 computed by robot 1 under different communication intervals on Sequence-UAV_3(Lawn_3), when there is no consensus step in the joint state estimation stage. It is demonstrated that the mutual state estimation accuracy can still be maintained at a relatively higher communication frequency. As the communication interval getting longer, the mutual state estimation performance degrades significantly. 
+This figure shows the state estimates of robot 3 computed by robot 1 under different communication intervals on Sequence-UAV_3, when there is no consensus step in the joint state estimation stage. It is demonstrated that the mutual state estimation accuracy can still be maintained at a relatively higher communication frequency. As the communication interval getting longer, the mutual state estimation performance degrades significantly. 
 
 ---
 
